@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+}
+
+footer {
+	margin-top: auto;
+	height: 8rem;
+	
+	display: flex;
+	flex: 1; /*isto deu a largura a caixa*/
+
+	background-color: lightslategray;
+	color: white;
+
+	justify-content: center;
+	align-items: center;
+}
