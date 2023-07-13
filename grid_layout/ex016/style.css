@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: grid;
+
+	/*outra opção para criação de template, além do grid-template-rows e grid-template-columns*/
+	grid-template-areas:
+		"i1 i1"
+		"i2 i3"
+		"i4 i4"
+		;
+
+	grid-template-columns: 1fr 200px;
+	grid-template-rows: 80px 1fr 100px;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.item {
+	background-color:deeppink;
+}
+
+.item-1 {
+	grid-area: i1;
+	background-color: red;
+}
+
+.item-2 {
+	grid-area: i2;
+	background-color: green;
+}
+
+.item-3 {
+	grid-area: i3;
+	background-color: blue;
+}
+
+.item-4 {
+	grid-area: i4;
+	background-color: yellow;
+}
