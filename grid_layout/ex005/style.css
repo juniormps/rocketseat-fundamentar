@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	border: 5px solid cyan ;
+	margin: 10px;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 200px; /*desta forma, a primeira linha terá tamanho automático (que equivale a 1fr). Como não foi definido o tamnho para as demais que vêm depois da segunda, elas terão tamanho de 1fr tbm*/
+
+	grid-auto-rows: 100px; /*configurará automaticamente toda nova linha que for gerada ou que não foi personalizada*/
+
+	gap: 30px; /*adicionará um espaço com este tamanho entre as células, APENAS ENTRE AS CÉLULAS. para adicionar um espaço entre o container e as células deve-se utilizar o PADDING*/
+
+	
+}
+
+.item {
+	background-color:deeppink;
+}
