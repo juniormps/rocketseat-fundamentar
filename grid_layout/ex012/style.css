@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	border: 5px solid cyan ;
+	margin: 10px;
+
+	display: grid;
+
+	grid-template-columns: repeat(3, 1fr);
+	
+	grid-template-rows: auto;
+
+	gap: 10px;
+}
+
+.item {
+	background-color:deeppink;
+}
+
+.item-2 {
+	/*propriedades utilizadas para espadir esta célula para outras linhas e colunas. O início e o fim é marcado pelo nº da linha virtual e coluna virtual*/
+	grid-row-start: 1; 
+	grid-row-end: 3;
+	grid-column-start: 2;
+	grid-column-end: 4;
+}
