@@ -20,9 +20,11 @@ body {
 
 	grid-auto-rows: 100px; /*configurará automaticamente toda nova linha que for gerada ou que não foi personalizada*/
 
-	gap: 30px; /*adicionará um espaço com este tamanho entre as células, APENAS ENTRE AS CÉLULAS. para adicionar um espaço entre o container e as células deve-se utilizar o PADDING*/
+	gap: 30px; /*Esta propriedade é um shorthand de ROW-GAP e COLUMN-GAP. Ela adicionará um espaço com este tamanho entre as células, tanto entre as LINHAS, como entre as COLUNAS. Porém, este espaço é APENAS ENTRE AS CÉLULAS. para adicionar um espaço entre o container e as células deve-se utilizar o PADDING.
+	Como shorthand, pode ser configurados valores diferentes para linhas e colunas, como por exemplo: "gap: 30px 20px"
+	*/
 
-	
+	padding: 30px; /*como dito acima, esta propriedade adicionará este espaço entre as células e o container (contorno)*/
 }
 
 .item {
