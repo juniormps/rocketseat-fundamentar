@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	border: 5px solid cyan ;
+	margin: 10px;
+
+	display: grid;
+
+	/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;*/
+	grid-template-columns: repeat(6, 1fr); /*Para não ter que repetir a mesma informação várias vezes como no exemplo acima, pode-se utilizar o REPEAT*/
+	
+	grid-template-rows: auto;
+
+	gap: 10px;
+
+
+	
+}
+
+.item {
+	background-color:deeppink;
+}
