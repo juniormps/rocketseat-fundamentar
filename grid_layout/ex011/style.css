@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	border: 5px solid cyan ;
+	margin: 10px;
+
+	display: grid;
+
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /*O auto-fill é parecido com o auto-fit. Porém, quando a página cresce, ele não estica para 1fr. Ao invés disso, ele cria novas células em branco na mesma linha. Esta opção é utilizada em poucos casos. Na maioria das vezes é o AUTO-FIT que será utilizado.*/
+	
+	grid-template-rows: auto;
+
+	gap: 10px;
+
+
+	
+}
+
+.item {
+	background-color:deeppink;
+}
