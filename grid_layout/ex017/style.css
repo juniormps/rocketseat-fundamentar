@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+	grid-template-rows: repeat(4, 100px);
+	gap: 10px;
+
+	justify-content: center; /*Alinha a GRID horizontalmente*/
+	align-content: center; /*Alinha a GRID verticalmente*/
+
+	align-items: center; /*Alinha os ITENS (conteúdo de cada célula) dentro da CÉLULA verticalmente*/
+	justify-items: center;/*Alinha os ITENS (conteúdo de cada célula) dentro da CÉLULA horizontalmente*/
+
+
+	width: 100vw;
+	height: 100vh;
+	background-color: yellow;
+}
+
+.item {
+	background-color:deeppink;
+}
+
+.item-8 {
+	align-self: flex-end; /*Alinha especificamente o conteúdo deste ITEM dentro da célula verticalmente*/
+	justify-self: flex-end; /*Alinha especificamente o conteúdo deste ITEM dentro da célula horizontalmente*/
+}
